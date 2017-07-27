@@ -14,13 +14,10 @@ namespace testing {
 namespace _template {
 
 
-TEST(_template, SmokeTest) {
-    EXPECT_EQ(3, 1 + 2);
-}
-
-
 TEST(_template, YourTest) {
+    EXPECT_EQ(3, 1 + 2);
     cout << "Hello World!" << endl;
+    // Your code here...
 }
 
 

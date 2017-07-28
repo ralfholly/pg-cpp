@@ -9,7 +9,7 @@ GTEST_PATH = $(GOOGLE_TEST_HOME)/googletest
 
 # 'override' allows you to pass in extra flags when invoking `make', ie.
 # make CPPFLAGS=-std=c++14
-override CPPFLAGS += -g -pthread -I $(GTEST_PATH)/include -I $(GMOCK_PATH)/include
+override CPPFLAGS += -W -Wall -g -pthread -I $(GTEST_PATH)/include -I $(GMOCK_PATH)/include
 override LDFLAGS += -L $(GMOCK_PATH)
 override LDLIBS += -l gmock_main
 
@@ -17,7 +17,7 @@ override LDLIBS += -l gmock_main
 
 all: test
 
-_template: _template.cpp $(wildcard *.h)
+_template: _template.cpp
 
 test: _template
 	./$<

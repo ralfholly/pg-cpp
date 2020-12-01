@@ -10,7 +10,7 @@ using namespace std;
 using namespace testing;
 
 
-namespace testing { 
+namespace testing {
 namespace _template {
 
 

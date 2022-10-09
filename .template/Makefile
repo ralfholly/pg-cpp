@@ -1,6 +1,6 @@
 ifneq ("$(MAKECMDGOALS)", "clean")
 ifeq ("$(GOOGLE_TEST_HOME)", "")
-$(error "Please define GOOGLE_TEST_HOME, ie. `make GOOGLE_TEST_HOME=~/googletest-release-1.10.0'")
+$(error "Please define GOOGLE_TEST_HOME, ie. `make GOOGLE_TEST_HOME=~/googletest-release-1.12.1'")
 endif
 endif
 
